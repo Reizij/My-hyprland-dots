@@ -47,6 +47,7 @@ alias c='clear'
 alias poweroff='systemctl poweroff'
 alias reboot='systemctl reboot'
 alias logout='killall -u $USER'
+alias fetch='fastfetch --config ~/.config/fastfetch/config.jsonrc'
 
 # Keybindings
 bindkey -e
