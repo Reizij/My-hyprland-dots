@@ -44,6 +44,9 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 alias aria='aria2c'
 alias ls='ls --color'
 alias c='clear'
+alias poweroff='systemctl poweroff'
+alias reboot='systemctl reboot'
+alias logout='killall -u $USER'
 
 # Keybindings
 bindkey -e
