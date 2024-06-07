@@ -44,11 +44,9 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 alias aria='aria2c'
 alias ls='ls --color'
 alias c='clear'
-alias poweroff='systemctl poweroff'
-alias reboot='systemctl reboot'
-alias logout='killall -u $USER'
 alias fetch='fastfetch --config ~/.config/fastfetch/config.jsonrc'
-
+alias top =btop
+alias cat=bat
 # Keybindings
 bindkey -e
 bindkey '^[[1;5D' backward-word
@@ -57,4 +55,5 @@ bindkey '^H' backward-kill-word
 
 # Shell integrations
 eval "$(fzf --zsh)"
+eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
