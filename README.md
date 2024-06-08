@@ -1,6 +1,6 @@
 # **My dotfiles for various applications**
 
-This repo include configuration files for:
+This repo includes configuration files for:
 - [Hyprland](https://github.com/Reizij/My-hyprland-dots/tree/main/.config/hypr)
 - [Zsh](https://github.com/Reizij/My-hyprland-dots/blob/main/.zshrc)
 - [Kitty](https://github.com/Reizij/My-hyprland-dots/tree/main/.config/kitty)
