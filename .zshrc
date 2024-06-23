@@ -44,9 +44,13 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 alias aria='aria2c'
 alias ls='ls --color'
 alias c='clear'
-alias fetch='fastfetch --config ~/.config/fastfetch/config.jsonrc'
+alias fastfetch='fastfetch --config ~/.config/fastfetch/config.jsonrc'
 alias top =btop
-alias cat=bat
+alias sk="cd /home/reizij/Documents/jdk-21.0.3+9-jre/bin && ./java -jar /home/reizij/.minecraft/SKlauncher.jar"
+
+# Environment Variables
+# export PATH=/home/reizij/.local/share/zinit/polaris/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/var/lib/flatpak/exports/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/reizij/.local/bin
+
 # Keybindings
 bindkey -e
 bindkey '^[[1;5D' backward-word
@@ -57,3 +61,11 @@ bindkey '^H' backward-kill-word
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
+
+# Import colorscheme from 'wal' asynchronously
+# &   # Run the process in the background.
+# ( ) # Hide shell job control messages.
+(cat ~/.cache/wal/sequences &)
+
+# To add support for TTYs this line can be optionally added.
+source ~/.cache/wal/colors-tty.sh
