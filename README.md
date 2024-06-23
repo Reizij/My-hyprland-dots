@@ -11,10 +11,12 @@ This repo includes configuration files for:
 - [Wallpaper](https://whvn.cc/3zmr6y)
 
 # **Usage**
-To use this setup, simply clone this repo into your home directory.
+To use this setup, clone this repo and copy the files into your home directory.
 
   ```bash
   git clone https://github.com/Reizij/My-hyprland-dots.git
+  cd My-hyprland-dots
+  cp -r .config .zshrc ~/
 
 ```
 
